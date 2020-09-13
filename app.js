@@ -5,8 +5,8 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const OUTPUT_DIR = path.resolve(__dirname, "./output");
+const outputPath = path.join(OUTPUT_DIR, "./team.html");
 
 const render = require("./lib/htmlRenderer");
 
@@ -147,7 +147,7 @@ function internInformation() {
 } // END FUNCTION
 
 function generateHTML(fileName, data) {
-  fs.writeFile(fileName, data, "utf8", function (err) {
+  fs.writeFile("team.html", data, "utf8", function (err) {
     if (err) {
       throw err;
     }
