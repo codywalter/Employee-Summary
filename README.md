@@ -27,7 +27,8 @@ None
 
             To test, run the following command: node app.js
 
-![](./Employee-Summary.png)
+![](./utils/Employee-Summary.png)
+![](./utils/Employee-Summary-Demo.gif)
 
 ## Contributors
 
